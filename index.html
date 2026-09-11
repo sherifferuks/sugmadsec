@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SUGMAD | Onshore &amp; Maritime Security Services Nigeria</title>
+<meta name="description" content="SUGMAD Onshore Security Services Nigeria Limited protects people, assets, and operations across Nigeria's ports, terminals, and high-risk sites - onshore and at sea." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" sizes="32x32" href="/brand_assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="/brand_assets/favicon-64.png" />
+<link rel="apple-touch-icon" href="/brand_assets/apple-touch-icon.png" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Geist', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          mono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
+        },
+        colors: {
+          ink: '#0a0017',
+          blue: {
+            DEFAULT: '#1935a5',
+            hover: '#1f42ce',
+            100: '#e4e9fb',
+            200: '#c5cff6',
+            300: '#9eaef0',
+            400: '#647ee8',
+            500: '#2247dd',
+            600: '#152d8c',
+            800: '#0e1d5b',
+            900: '#09133a',
+            950: '#050b21',
+          },
+          stone: {
+            100: '#f9faf9',
+            200: '#eff2ef',
+            300: '#e3e7e2',
+            400: '#d9dfd9',
+            500: '#d0d7cf',
+            600: '#a2a8a1',
+            700: '#5e615d',
+            800: '#303130',
+            900: '#19191a',
+          },
+        },
+      },
+    },
+  };
+</script>
+<style>
+  :root { color-scheme: dark; }
+  body { background: #0a0017; }
+  .label-dot { background: #1935a5; }
+  .tab-progress-bar { transform: scaleX(0); transform-origin: left center; transition: transform 5s linear; }
+  .tab-progress-bar.playing { transform: scaleX(1); }
+  .tab-desc { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s cubic-bezier(.625,.05,0,1), opacity .3s ease; opacity: .7; }
+  .tab-item.active .tab-desc { grid-template-rows: 1fr; opacity: 1; }
+  .tab-desc > div { overflow: hidden; }
+  .acc-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s cubic-bezier(.625,.05,0,1); }
+  .acc-item.active .acc-body { grid-template-rows: 1fr; }
+  .acc-body > div { overflow: hidden; }
+  .acc-item.active .acc-icon { transform: rotate(45deg); }
+  .acc-icon { transition: transform .4s cubic-bezier(.625,.05,0,1); }
+  .solutions-row:hover .solutions-preview,
+  .solutions-row:focus-visible .solutions-preview { opacity: 1; }
+  .solutions-preview { transition: opacity .4s ease; }
+  .industry-card img { transition: transform .6s cubic-bezier(.215,.61,.355,1); }
+  .industry-card:hover img { transform: scale(1.06); }
+  .btn-primary { transition: background-color .2s cubic-bezier(.215,.61,.355,1), transform .2s cubic-bezier(.215,.61,.355,1); }
+  .btn-primary:hover { background-color: #1f42ce; }
+  .btn-primary:active { transform: scale(.97); }
+  .btn-secondary { transition: background-color .2s cubic-bezier(.215,.61,.355,1), transform .2s cubic-bezier(.215,.61,.355,1); }
+  .btn-secondary:hover { background-color: #a2a8a1; color: #0a0017; }
+  .btn-secondary:active { transform: scale(.97); }
+  .nav-link { position: relative; }
+  .nav-link::after { content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 0; background: currentColor; transition: width .25s ease; }
+  .nav-link:hover::after, .nav-link:focus-visible::after { width: 100%; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #647ee8; outline-offset: 2px; }
+  .grain { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"); }
+</style>
+</head>
+<body class="font-sans text-white antialiased">
+
+<!-- ================= NAV ================= -->
+<header class="fixed top-0 inset-x-0 z-50 px-4 sm:px-8 lg:px-[6%] pt-4 sm:pt-5">
+  <div class="max-w-[1600px] mx-auto rounded-2xl bg-ink/55 backdrop-blur-md border border-white/10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)]">
+    <div class="px-5 lg:px-8 h-[64px] flex items-center justify-between">
+      <a href="/" class="shrink-0 flex items-center gap-2.5 text-white font-mono uppercase tracking-[-0.02em] text-lg font-medium">
+        <img src="/brand_assets/logomark-nav.png" alt="" class="h-7 w-auto" />
+        SUGMAD
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10 font-mono text-[13px] uppercase tracking-[.05em]">
+        <a href="/solutions" class="nav-link">Solutions</a>
+        <a href="/intelligence" class="nav-link">Intelligence</a>
+        <a href="/compliance" class="nav-link">Compliance</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <button type="button" data-open-demo class="btn-primary bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-5 py-2.5 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.6)]">Request a Security Assessment</button>
+      </div>
+
+      <button type="button" data-mobile-toggle class="lg:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5" aria-label="Toggle menu">
+        <span class="block w-6 h-px bg-white"></span>
+        <span class="block w-6 h-px bg-white"></span>
+      </button>
+    </div>
+
+    <div data-mobile-menu class="lg:hidden hidden border-t border-white/10">
+      <div class="px-5 py-6 flex flex-col gap-5 font-mono text-sm uppercase tracking-[.05em]">
+        <a href="/solutions">Solutions</a>
+        <a href="/intelligence">Intelligence</a>
+        <a href="/compliance">Compliance</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <div class="pt-3">
+          <button type="button" data-open-demo class="w-full text-center bg-blue rounded-[.25em] px-5 py-3">Request a Security Assessment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative overflow-hidden min-h-[720px] flex flex-col">
+  <div class="absolute inset-0">
+    <video data-hero-video class="w-full h-full object-cover" muted loop playsinline preload="none" poster="/assets/homepage/hero-poster.webp"></video>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-ink"></div>
+    <div class="absolute inset-0 bg-ink/10 grain"></div>
+  </div>
+
+  <div class="relative flex-1 flex items-center px-5 lg:px-[6%] pt-[88px] pb-14">
+    <div class="w-full">
+      <h1 class="font-mono uppercase tracking-[-0.0625em] font-normal leading-[1] text-[30px] sm:text-[42px] lg:text-[52px] xl:text-[58px] flex items-start gap-3">
+        <span class="text-blue-400">&middot;</span>
+        <span>Securing Nigeria&rsquo;s Ports, Terminals and Supply Chains</span>
+      </h1>
+      <div class="h-px bg-white/30 mt-6 mb-5"></div>
+      <div class="flex items-start justify-between gap-6">
+        <p class="max-w-[520px] text-stone-300 text-[15px] lg:text-base leading-relaxed">SUGMAD Onshore Security Services provides licensed facility protection, convoy escort and maritime risk intelligence across Lagos, the Niger Delta and the Gulf of Guinea.</p>
+        <div class="hidden sm:block shrink-0 font-mono text-[13px] uppercase tracking-[.05em] text-stone-300">6.4474&ordm;N 3.3903&ordm;E</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY SUGMAD (tabs) ================= -->
+<section class="bg-white text-stone-900 py-20 lg:py-28">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+      <span class="w-2 h-2 label-dot"></span> Why SUGMAD
+    </div>
+    <h3 class="max-w-3xl font-normal leading-[1.25] tracking-[-0.02em] text-[26px] sm:text-[32px] lg:text-[42px] mb-14 lg:mb-20">Most maritime security stops at the vessel rail. The exposure does not. Cargo sits on a jetty, product sits in a tank farm, crews move by road. SUGMAD secures that ground.</h3>
+
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start" data-tabs-root>
+      <div class="flex flex-col">
+        <button type="button" class="tab-item active text-left py-5 border-b border-stone-300" data-tab-btn="0">
+          <div class="text-lg sm:text-xl font-normal">Licensed and Accountable</div>
+          <div class="tab-desc"><div><p class="text-stone-600 text-sm sm:text-base leading-relaxed pt-3 max-w-md">We operate under Nigerian regulatory approvals with documented rules of engagement. Every deployment is auditable.</p></div></div>
+          <div class="h-px bg-stone-900 mt-4 relative overflow-hidden"><div class="tab-progress-bar absolute inset-0 bg-blue" data-tab-progress="0"></div></div>
+        </button>
+        <button type="button" class="tab-item text-left py-5 border-b border-stone-300" data-tab-btn="1">
+          <div class="text-lg sm:text-xl font-normal">Local Knowledge, Professional Standards</div>
+          <div class="tab-desc"><div><p class="text-stone-600 text-sm sm:text-base leading-relaxed pt-3 max-w-md">Lagos-based and operating since 2019, with personnel drawn from and trained for the environments they work in.</p></div></div>
+          <div class="h-px bg-stone-900 mt-4 relative overflow-hidden"><div class="tab-progress-bar absolute inset-0 bg-blue" data-tab-progress="1"></div></div>
+        </button>
+        <button type="button" class="tab-item text-left py-5 border-b border-stone-300" data-tab-btn="2">
+          <div class="text-lg sm:text-xl font-normal">Intelligence-Led</div>
+          <div class="tab-desc"><div><p class="text-stone-600 text-sm sm:text-base leading-relaxed pt-3 max-w-md">We do not sell headcount. We assess the threat, then deploy a response proportionate to it.</p></div></div>
+          <div class="h-px bg-stone-900 mt-4 relative overflow-hidden"><div class="tab-progress-bar absolute inset-0 bg-blue" data-tab-progress="2"></div></div>
+        </button>
+        <button type="button" class="tab-item text-left py-5" data-tab-btn="3">
+          <div class="text-lg sm:text-xl font-normal">24/7 Operations Desk</div>
+          <div class="tab-desc"><div><p class="text-stone-600 text-sm sm:text-base leading-relaxed pt-3 max-w-md">A duty officer is reachable at any hour, every day of the year.</p></div></div>
+          <div class="h-px bg-stone-900 mt-4 relative overflow-hidden"><div class="tab-progress-bar absolute inset-0 bg-blue" data-tab-progress="3"></div></div>
+        </button>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-ink shadow-[0_30px_60px_-20px_rgba(10,0,23,0.35)]">
+        <div class="tab-visual active absolute inset-0" data-tab-visual="0">
+          <img src="https://placehold.co/960x720/0a0017/ffffff?text=Maritime+Security" alt="Placeholder photo representing maritime security" class="w-full h-full object-cover" />
+        </div>
+        <div class="tab-visual absolute inset-0 opacity-0" data-tab-visual="1">
+          <img src="https://placehold.co/960x720/0a0017/ffffff?text=24%2F7+Response+Team" alt="Placeholder photo representing 24/7 response team" class="w-full h-full object-cover" />
+        </div>
+        <div class="tab-visual absolute inset-0 opacity-0" data-tab-visual="2">
+          <img src="https://placehold.co/960x720/0a0017/ffffff?text=Onshore+Facility+Patrol" alt="Placeholder photo representing onshore facility patrol" class="w-full h-full object-cover" />
+        </div>
+        <div class="tab-visual absolute inset-0 opacity-0" data-tab-visual="3">
+          <img src="https://placehold.co/960x720/0a0017/ffffff?text=Operations+Briefing" alt="Placeholder photo representing an operations briefing" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent"></div>
+        <div class="absolute left-6 bottom-6 right-20 text-white font-mono uppercase tracking-[-0.03em] text-xl sm:text-2xl leading-[1.1]">Securing Nigeria&rsquo;s High-Risk Sites</div>
+        <div class="absolute right-6 bottom-6 text-white font-mono uppercase text-2xl sm:text-3xl" data-tab-number>01</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOLUTIONS ================= -->
+<section class="bg-white text-stone-900 pb-20 lg:pb-28">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+      <div>
+        <h2 class="font-normal tracking-[-0.02em] text-[36px] sm:text-[48px] lg:text-[56px] leading-none">Solutions<sup class="text-lg align-super ml-1 text-stone-500" aria-label=" 8">8</sup></h2>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-md mt-6">From high-risk waters to onshore facilities, we provide tailored security and logistics solutions that keep people, assets, and operations protected across Nigeria and beyond.</p>
+        <a href="/solutions" class="btn-primary inline-block mt-8 bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.5)]">See All Solutions</a>
+      </div>
+
+      <div class="relative">
+        <div class="hidden lg:block absolute -right-4 top-0 w-[340px] aspect-[4/3] rounded-2xl overflow-hidden pointer-events-none" data-solutions-preview-wrap>
+          <img data-solutions-preview class="w-full h-full object-cover solutions-preview opacity-0 shadow-[0_30px_60px_-20px_rgba(10,0,23,0.25)]" src="https://placehold.co/680x510/0a0017/ffffff?text=Maritime+Security" alt="" />
+        </div>
+        <div class="flex flex-col">
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Maritime+Security" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">1</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">Maritime Security</span>
+          </a>
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Onshore+Security" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">2</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">Onshore Security Services</span>
+          </a>
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Marine+Logistics" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">3</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">Marine Logistics &amp; Vessel Support</span>
+          </a>
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Crew+Transfer" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">4</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">Crew &amp; Personnel Transfer</span>
+          </a>
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Pipeline+Security" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">5</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">Pipeline Security &amp; Protection</span>
+          </a>
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Risk+Consultancy" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">6</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">Risk Assessment &amp; Consultancy</span>
+          </a>
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Emergency+Response" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">7</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">24/7 Emergency Response</span>
+          </a>
+          <a href="#" data-solutions-img="https://placehold.co/680x510/0a0017/ffffff?text=Compliance+Support" class="solutions-row group flex items-center gap-6 py-4 border-b border-stone-300">
+            <span class="font-mono text-sm text-stone-400 w-6">8</span>
+            <span class="text-lg sm:text-xl font-normal group-hover:text-blue transition">Compliance &amp; Regulatory Support</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUGMAD INTELLIGENCE (accordion) ================= -->
+<section class="bg-ink text-white py-20 lg:py-28">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue-300 mb-6">
+      <span class="w-2 h-2 label-dot"></span> SUGMAD Intelligence
+    </div>
+    <h2 class="font-normal tracking-[-0.02em] text-[34px] sm:text-[48px] lg:text-[56px] leading-[1.05] mb-14 lg:mb-20 max-w-xl">Understand the operating environment before you commit an asset</h2>
+
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <div class="flex flex-col" data-accordion-root>
+        <div class="acc-item active border-b border-white/15 py-5" data-acc-item>
+          <button type="button" data-acc-trigger class="w-full flex items-center justify-between gap-4 text-left">
+            <span class="flex items-center gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-200">
+              <span class="text-blue-300">&#128737;&#65039;</span> Pre-Deployment Risk Assessment
+            </span>
+            <span class="acc-icon text-blue-300 text-xl leading-none">+</span>
+          </button>
+          <div class="acc-body"><div><p class="text-stone-400 text-sm leading-relaxed pt-4 max-w-md">A written assessment of a specific port call, route or site before you commit, covering threat actors, incident history and recommended mitigations.</p></div></div>
+        </div>
+
+        <div class="acc-item border-b border-white/15 py-5" data-acc-item>
+          <button type="button" data-acc-trigger class="w-full flex items-center justify-between gap-4 text-left">
+            <span class="flex items-center gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-200">
+              <span class="text-blue-300">&#128674;</span> Recurring Threat Reporting
+            </span>
+            <span class="acc-icon text-blue-300 text-xl leading-none">+</span>
+          </button>
+          <div class="acc-body"><div><p class="text-stone-400 text-sm leading-relaxed pt-4 max-w-md">Scheduled reporting on the maritime and onshore threat picture across your areas of operation, with change-of-posture alerts between editions.</p></div></div>
+        </div>
+
+        <div class="acc-item border-b border-white/15 py-5" data-acc-item>
+          <button type="button" data-acc-trigger class="w-full flex items-center justify-between gap-4 text-left">
+            <span class="flex items-center gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-200">
+              <span class="text-blue-300">&#128119;</span> Geospatial Analysis &amp; Incident Mapping
+            </span>
+            <span class="acc-icon text-blue-300 text-xl leading-none">+</span>
+          </button>
+          <div class="acc-body"><div><p class="text-stone-400 text-sm leading-relaxed pt-4 max-w-md">Spatial analysis of incident history, approach routes and facility exposure, delivered as annotated mapping alongside written assessment.</p></div></div>
+        </div>
+
+        <div class="acc-item border-b border-white/15 py-5" data-acc-item>
+          <button type="button" data-acc-trigger class="w-full flex items-center justify-between gap-4 text-left">
+            <span class="flex items-center gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-200">
+              <span class="text-blue-300">&#128230;</span> Facility Vulnerability Assessment
+            </span>
+            <span class="acc-icon text-blue-300 text-xl leading-none">+</span>
+          </button>
+          <div class="acc-body"><div><p class="text-stone-400 text-sm leading-relaxed pt-4 max-w-md">On-site survey of physical security, procedures and personnel, with a prioritised and costed remediation plan.</p></div></div>
+        </div>
+
+        <div class="acc-item border-b border-white/15 py-5" data-acc-item>
+          <button type="button" data-acc-trigger class="w-full flex items-center justify-between gap-4 text-left">
+            <span class="flex items-center gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-200">
+              <span class="text-blue-300">&#128736;&#65039;</span> Route &amp; Journey Risk Planning
+            </span>
+            <span class="acc-icon text-blue-300 text-xl leading-none">+</span>
+          </button>
+          <div class="acc-body"><div><p class="text-stone-400 text-sm leading-relaxed pt-4 max-w-md">Assessment of specific road and waterway movements, with journey management procedures and defined check-in protocols.</p></div></div>
+        </div>
+
+        <div class="acc-item border-b border-white/15 py-5" data-acc-item>
+          <button type="button" data-acc-trigger class="w-full flex items-center justify-between gap-4 text-left">
+            <span class="flex items-center gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-200">
+              <span class="text-blue-300">&#128225;</span> Analyst Support
+            </span>
+            <span class="acc-icon text-blue-300 text-xl leading-none">+</span>
+          </button>
+          <div class="acc-body"><div><p class="text-stone-400 text-sm leading-relaxed pt-4 max-w-md">Direct access to the analyst who wrote your assessment, for follow-up questions throughout the engagement period.</p></div></div>
+        </div>
+        <a href="/intelligence" class="btn-primary inline-block mt-8 self-start bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.5)]">Explore SUGMAD Intelligence</a>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-stone-900 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.5)]">
+        <img data-acc-visual src="https://placehold.co/960x720/0a0017/ffffff?text=Pre-Deployment+Risk+Assessment" alt="Placeholder photo representing pre-deployment risk assessment" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" />
+        <img data-acc-visual src="https://placehold.co/960x720/0a0017/ffffff?text=Recurring+Threat+Reporting" alt="Placeholder photo representing recurring threat reporting" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+        <img data-acc-visual src="https://placehold.co/960x720/0a0017/ffffff?text=Geospatial+Analysis" alt="Placeholder photo representing geospatial analysis and incident mapping" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+        <img data-acc-visual src="https://placehold.co/960x720/0a0017/ffffff?text=Facility+Vulnerability+Assessment" alt="Placeholder photo representing facility vulnerability assessment" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+        <img data-acc-visual src="https://placehold.co/960x720/0a0017/ffffff?text=Route+%26+Journey+Risk+Planning" alt="Placeholder photo representing route and journey risk planning" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+        <img data-acc-visual src="https://placehold.co/960x720/0a0017/ffffff?text=Analyst+Support" alt="Placeholder photo representing analyst support" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AREAS WE COVER (was Industries) ================= -->
+<section class="bg-white text-stone-900 py-20 lg:py-28">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+      <span class="w-2 h-2 label-dot"></span> Areas We Cover
+    </div>
+    <div class="flex flex-col items-start lg:items-center lg:text-center gap-5 mb-14 lg:mb-16">
+      <h2 class="font-normal tracking-[-0.02em] text-[32px] sm:text-[44px] lg:text-[52px] leading-none">Protecting Nigeria&rsquo;s High-Risk Regions</h2>
+      <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-xl">SUGMAD operates across Nigeria&rsquo;s key ports and high-risk zones, delivering consistent protection wherever your operations take you.</p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+      <div class="industry-card relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[3/4]">
+        <img src="https://placehold.co/800x1000/0a0017/ffffff?text=Lagos" alt="Placeholder photo representing Lagos" class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent"></div>
+        <div class="absolute left-4 bottom-4 right-4 text-white font-normal text-base sm:text-lg leading-tight">Lagos</div>
+      </div>
+      <div class="industry-card relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[3/4]">
+        <img src="https://placehold.co/800x1000/0a0017/ffffff?text=%5BVERIFY%5D" alt="Placeholder photo - location to be confirmed" class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent"></div>
+        <div class="absolute left-4 bottom-4 right-4 text-white font-normal text-base sm:text-lg leading-tight">[VERIFY: location 2 &mdash; delete this entry if not confirmed]</div>
+      </div>
+      <div class="industry-card relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[3/4]">
+        <img src="https://placehold.co/800x1000/0a0017/ffffff?text=%5BVERIFY%5D" alt="Placeholder photo - location to be confirmed" class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent"></div>
+        <div class="absolute left-4 bottom-4 right-4 text-white font-normal text-base sm:text-lg leading-tight">[VERIFY: location 3 &mdash; delete this entry if not confirmed]</div>
+      </div>
+      <div class="industry-card relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[3/4]">
+        <img src="https://placehold.co/800x1000/0a0017/ffffff?text=%5BVERIFY%5D" alt="Placeholder photo - location to be confirmed" class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent"></div>
+        <div class="absolute left-4 bottom-4 right-4 text-white font-normal text-base sm:text-lg leading-tight">[VERIFY: location 4 &mdash; delete this entry if not confirmed]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+================= TESTIMONIALS (unmounted - no verified client testimonials yet, see content-fix review) =================
+<section class="bg-white text-stone-900 pb-20 lg:pb-28">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue">
+        <span class="w-2 h-2 label-dot"></span> Client Testimonials
+      </div>
+      <div class="flex gap-2">
+        <button type="button" data-testi-prev class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center hover:bg-stone-100 active:scale-95 transition">&#8592;</button>
+        <button type="button" data-testi-next class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center hover:bg-stone-100 active:scale-95 transition">&#8594;</button>
+      </div>
+    </div>
+
+    <div class="relative bg-stone-100 rounded-2xl overflow-hidden">
+      <div data-testi-slide class="grid sm:grid-cols-[380px_1fr] gap-0">
+        <div class="aspect-[4/3] sm:aspect-auto">
+          <img src="https://placehold.co/760x900/0a0017/ffffff?text=Client+Photo" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-8 sm:p-12 flex flex-col justify-center">
+          <div class="text-blue text-4xl leading-none mb-6 font-serif">&ldquo;</div>
+          <p class="text-xl sm:text-2xl leading-snug font-normal max-w-xl">Their team was professional, punctual, and clearly experienced in high-risk environments. We felt secure from day one.</p>
+          <div class="mt-8 font-mono text-xs uppercase tracking-[.04em] text-stone-500">Operations Manager, Logistics Client</div>
+        </div>
+      </div>
+
+      <div data-testi-slide class="grid sm:grid-cols-[380px_1fr] gap-0 hidden">
+        <div class="aspect-[4/3] sm:aspect-auto">
+          <img src="https://placehold.co/760x900/0a0017/ffffff?text=Client+Photo" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-8 sm:p-12 flex flex-col justify-center">
+          <div class="text-blue text-4xl leading-none mb-6 font-serif">&ldquo;</div>
+          <p class="text-xl sm:text-2xl leading-snug font-normal max-w-xl">Communication was clear throughout, and every request was handled quickly and professionally.</p>
+          <div class="mt-8 font-mono text-xs uppercase tracking-[.04em] text-stone-500">Facility Director, Energy Sector Client</div>
+        </div>
+      </div>
+
+      <div data-testi-slide class="grid sm:grid-cols-[380px_1fr] gap-0 hidden">
+        <div class="aspect-[4/3] sm:aspect-auto">
+          <img src="https://placehold.co/760x900/0a0017/ffffff?text=Client+Photo" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-8 sm:p-12 flex flex-col justify-center">
+          <div class="text-blue text-4xl leading-none mb-6 font-serif">&ldquo;</div>
+          <p class="text-xl sm:text-2xl leading-snug font-normal max-w-xl">A dependable partner for our marine operations - responsive, thorough, and easy to work with.</p>
+          <div class="mt-8 font-mono text-xs uppercase tracking-[.04em] text-stone-500">Project Lead, Marine Operations Client</div>
+        </div>
+      </div>
+
+      <div data-testi-slide class="grid sm:grid-cols-[380px_1fr] gap-0 hidden">
+        <div class="aspect-[4/3] sm:aspect-auto">
+          <img src="https://placehold.co/760x900/0a0017/ffffff?text=Client+Photo" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-8 sm:p-12 flex flex-col justify-center">
+          <div class="text-blue text-4xl leading-none mb-6 font-serif">&ldquo;</div>
+          <p class="text-xl sm:text-2xl leading-snug font-normal max-w-xl">Their onshore security team gave us real peace of mind across every site visit.</p>
+          <div class="mt-8 font-mono text-xs uppercase tracking-[.04em] text-stone-500">Site Manager, Onshore Facility Client</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+================= END TESTIMONIALS =================
+-->
+
+<!-- ================= CTA + FOOTER ================= -->
+<footer class="bg-stone-200 text-stone-900">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12 pt-16 lg:pt-20">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-8 pb-16 lg:pb-20 border-b border-stone-400/70">
+      <h2 class="font-normal tracking-[-0.02em] text-[34px] sm:text-[44px] lg:text-[52px] leading-none">Let&rsquo;s talk</h2>
+      <button type="button" data-open-demo class="btn-primary self-start sm:self-auto bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.5)]">Request a Security Assessment</button>
+    </div>
+
+    <div class="grid sm:grid-cols-[1.4fr_1fr_1fr] gap-10 py-14">
+      <div class="font-mono text-[13px] uppercase tracking-[.04em] text-stone-700 leading-relaxed">
+        SUGMAD ONSHORE SECURITY SERVICES<br />
+        NIGERIA LIMITED<br />
+        SUITE 11A, GROUND FLOOR, EAST PAVILION<br />
+        TAFAWA BALEWA SQUARE COMPLEX<br />
+        LAGOS ISLAND, LAGOS STATE, NIGERIA<br />
+        <br />
+        +234 810 781 1378<br />
+        +234 810 445 8592<br />
+        <br />
+        Operations Desk: 24 hours, 7 days<br />
+        RC Number: [VERIFY]<br />
+        Email: [VERIFY &mdash; company-domain address]
+      </div>
+      <div class="flex flex-col gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-700">
+        <a href="/" class="hover:text-blue transition">Home</a>
+        <a href="/intelligence" class="hover:text-blue transition">Intelligence</a>
+        <a href="/solutions" class="hover:text-blue transition">Solutions</a>
+        <a href="/compliance" class="hover:text-blue transition">Compliance</a>
+        <a href="/about" class="hover:text-blue transition">About</a>
+        <a href="/contact" class="hover:text-blue transition">Contact</a>
+      </div>
+      <div class="flex flex-col gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-700">
+        <a href="/privacy-policy" class="hover:text-blue transition">Privacy Policy</a>
+        <a href="/cookie-policy" class="hover:text-blue transition">Cookie Policy</a>
+        <a href="/accessibility-statement" class="hover:text-blue transition">Accessibility Statement</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 py-8 border-t border-stone-400/70 font-mono text-xs uppercase tracking-[.04em] text-stone-600">
+      <span>&copy; <span data-copyright-year>2025</span> SUGMAD Onshore Security Services Nigeria Limited. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= DEMO MODAL ================= -->
+<div data-demo-modal class="fixed inset-0 z-[60] hidden">
+  <div class="absolute inset-0 bg-ink/80 backdrop-blur-sm" data-close-demo></div>
+  <div class="relative h-full flex items-center justify-center p-4">
+    <div class="relative w-full max-w-3xl bg-white text-stone-900 rounded-2xl overflow-hidden shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] grid sm:grid-cols-[1.2fr_1fr]">
+      <button type="button" data-close-demo class="absolute top-4 right-4 w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 flex items-center justify-center transition z-10" aria-label="Close">
+        <svg viewBox="0 0 12 12" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l10 10M11 1L1 11"/></svg>
+      </button>
+      <div class="p-8 sm:p-10">
+        <h5 class="text-2xl font-normal mb-2">Request a Security Assessment</h5>
+        <p class="text-stone-600 text-sm mb-6">Tell us about your operation and we&rsquo;ll get back to you with a tailored quote.</p>
+        <form data-demo-form class="flex flex-col gap-4">
+          <div class="grid grid-cols-2 gap-4">
+            <input required placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+            <input required placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+          </div>
+          <input required type="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+          <input placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+          <textarea placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]"></textarea>
+          <button type="submit" class="btn-primary bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Request a Security Assessment</button>
+        </form>
+        <div data-demo-success class="hidden">
+          <h5 class="text-2xl font-normal mb-2">Thank you!</h5>
+          <p class="text-stone-600 text-sm">Your request has been received. We&rsquo;ll be in touch shortly.</p>
+        </div>
+      </div>
+      <div class="hidden sm:flex items-center justify-center bg-stone-100 p-8">
+        <img src="/brand_assets/logomark.png" alt="SUGMAD logomark" class="w-2/3 max-w-[220px]" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // Mobile nav
+  var toggle = document.querySelector('[data-mobile-toggle]');
+  var menu = document.querySelector('[data-mobile-menu]');
+  toggle.addEventListener('click', function () { menu.classList.toggle('hidden'); });
+
+  var copyrightYearEl = document.querySelector('[data-copyright-year]');
+  if (copyrightYearEl) copyrightYearEl.textContent = new Date().getFullYear();
+
+  // Hero video: only load/play on desktop widths with no reduced-motion preference.
+  // Mobile and reduced-motion visitors see only the poster image and never fetch the video -
+  // autoplay video on 4G is a real bounce driver at Nigerian data prices.
+  var heroVideo = document.querySelector('[data-hero-video]');
+  if (heroVideo) {
+    var canAutoplayVideo =
+      window.matchMedia('(min-width: 768px)').matches &&
+      window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+    if (canAutoplayVideo) {
+      var heroSource = document.createElement('source');
+      heroSource.src = '/assets/homepage/hero-video.mp4';
+      heroSource.type = 'video/mp4';
+      heroVideo.appendChild(heroSource);
+      heroVideo.load();
+      heroVideo.play().catch(function () {});
+    }
+  }
+
+  // Demo modal
+  var modal = document.querySelector('[data-demo-modal]');
+  document.querySelectorAll('[data-open-demo]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  document.querySelectorAll('[data-close-demo]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+  });
+  var demoForm = document.querySelector('[data-demo-form]');
+  demoForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    demoForm.classList.add('hidden');
+    document.querySelector('[data-demo-success]').classList.remove('hidden');
+  });
+
+  // Tabs (What we do)
+  var tabBtns = Array.prototype.slice.call(document.querySelectorAll('[data-tab-btn]'));
+  var tabVisuals = Array.prototype.slice.call(document.querySelectorAll('[data-tab-visual]'));
+  var tabNumberEl = document.querySelector('[data-tab-number]');
+  var tabIndex = 0;
+  var tabTimer = null;
+
+  function setTab(i) {
+    tabIndex = i;
+    tabBtns.forEach(function (b, idx) {
+      b.classList.toggle('active', idx === i);
+      var bar = b.querySelector('[data-tab-progress]');
+      bar.classList.remove('playing');
+      void bar.offsetWidth;
+      if (idx === i) bar.classList.add('playing');
+    });
+    tabVisuals.forEach(function (v, idx) {
+      v.classList.toggle('opacity-0', idx !== i);
+      v.classList.toggle('active', idx === i);
+    });
+    tabNumberEl.textContent = String(i + 1).padStart(2, '0');
+    clearTimeout(tabTimer);
+    tabTimer = setTimeout(function () { setTab((tabIndex + 1) % tabBtns.length); }, 5000);
+  }
+  tabBtns.forEach(function (b, idx) {
+    b.addEventListener('click', function () { setTab(idx); });
+  });
+  setTab(0);
+
+  // Solutions hover preview
+  var solutionsRows = document.querySelectorAll('[data-solutions-img]');
+  var previewImg = document.querySelector('[data-solutions-preview]');
+  var previewWrap = document.querySelector('[data-solutions-preview-wrap]');
+  solutionsRows.forEach(function (row) {
+    row.addEventListener('mouseenter', function () {
+      previewImg.src = row.getAttribute('data-solutions-img');
+      previewImg.classList.remove('opacity-0');
+    });
+  });
+  if (previewWrap) {
+    previewWrap.parentElement.addEventListener('mouseleave', function () {
+      previewImg.classList.add('opacity-0');
+    });
+  }
+
+  // Accordion (Fleet & Services)
+  var accItems = Array.prototype.slice.call(document.querySelectorAll('[data-acc-item]'));
+  var accVisuals = Array.prototype.slice.call(document.querySelectorAll('[data-acc-visual]'));
+  function setAcc(i) {
+    accItems.forEach(function (item, idx) {
+      item.classList.toggle('active', idx === i);
+    });
+    accVisuals.forEach(function (v, idx) {
+      v.classList.toggle('opacity-0', idx !== i);
+    });
+  }
+  accItems.forEach(function (item, idx) {
+    item.querySelector('[data-acc-trigger]').addEventListener('click', function () { setAcc(idx); });
+  });
+  setAcc(0);
+
+  // Testimonials carousel
+  var slides = Array.prototype.slice.call(document.querySelectorAll('[data-testi-slide]'));
+  var testiIndex = 0;
+  function setTesti(i) {
+    testiIndex = (i + slides.length) % slides.length;
+    slides.forEach(function (s, idx) {
+      s.classList.toggle('hidden', idx !== testiIndex);
+    });
+  }
+  var prevBtn = document.querySelector('[data-testi-prev]');
+  var nextBtn = document.querySelector('[data-testi-next]');
+  if (prevBtn) prevBtn.addEventListener('click', function () { setTesti(testiIndex - 1); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { setTesti(testiIndex + 1); });
+  setTesti(0);
+})();
+</script>
+</body>
+</html>

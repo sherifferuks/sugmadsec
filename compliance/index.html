@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Compliance | SUGMAD Onshore &amp; Maritime Security Services</title>
+<meta name="description" content="The regulatory basis on which SUGMAD Onshore Security Services Nigeria Limited operates." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" sizes="32x32" href="/brand_assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="/brand_assets/favicon-64.png" />
+<link rel="apple-touch-icon" href="/brand_assets/apple-touch-icon.png" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Geist', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          mono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
+        },
+        colors: {
+          ink: '#0a0017',
+          blue: {
+            DEFAULT: '#1935a5',
+            hover: '#1f42ce',
+            100: '#e4e9fb',
+            200: '#c5cff6',
+            300: '#9eaef0',
+            400: '#647ee8',
+            500: '#2247dd',
+            600: '#152d8c',
+            800: '#0e1d5b',
+            900: '#09133a',
+            950: '#050b21',
+          },
+          stone: {
+            100: '#f9faf9',
+            200: '#eff2ef',
+            300: '#e3e7e2',
+            400: '#d9dfd9',
+            500: '#d0d7cf',
+            600: '#a2a8a1',
+            700: '#5e615d',
+            800: '#303130',
+            900: '#19191a',
+          },
+        },
+      },
+    },
+  };
+</script>
+<style>
+  :root { color-scheme: light; }
+  .label-dot { background: #1935a5; }
+  .btn-primary { transition: background-color .2s cubic-bezier(.215,.61,.355,1), transform .2s cubic-bezier(.215,.61,.355,1); }
+  .btn-primary:hover { background-color: #1f42ce; }
+  .btn-primary:active { transform: scale(.97); }
+  .nav-link { position: relative; }
+  .nav-link::after { content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 0; background: currentColor; transition: width .25s ease; }
+  .nav-link:hover::after, .nav-link:focus-visible::after { width: 100%; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #647ee8; outline-offset: 2px; }
+  .verify { color: #b45309; background: #fffbeb; border: 1px dashed #d97706; }
+</style>
+</head>
+<body class="font-sans text-stone-900 antialiased bg-white">
+
+<!-- ================= NAV ================= -->
+<header class="fixed top-0 inset-x-0 z-50 px-4 sm:px-8 lg:px-[6%] pt-4 sm:pt-5">
+  <div class="max-w-[1600px] mx-auto rounded-2xl bg-ink/90 backdrop-blur-md border border-white/10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)] text-white">
+    <div class="px-5 lg:px-8 h-[64px] flex items-center justify-between">
+      <a href="/" class="shrink-0 flex items-center gap-2.5 text-white font-mono uppercase tracking-[-0.02em] text-lg font-medium">
+        <img src="/brand_assets/logomark-nav.png" alt="" class="h-7 w-auto" />
+        SUGMAD
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10 font-mono text-[13px] uppercase tracking-[.05em]">
+        <a href="/solutions" class="nav-link">Solutions</a>
+        <a href="/intelligence" class="nav-link">Intelligence</a>
+        <a href="/compliance" class="nav-link text-blue-300">Compliance</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <button type="button" data-open-demo class="btn-primary bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-5 py-2.5 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.6)]">Request a Security Assessment</button>
+      </div>
+
+      <button type="button" data-mobile-toggle class="lg:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5" aria-label="Toggle menu">
+        <span class="block w-6 h-px bg-white"></span>
+        <span class="block w-6 h-px bg-white"></span>
+      </button>
+    </div>
+
+    <div data-mobile-menu class="lg:hidden hidden border-t border-white/10">
+      <div class="px-5 py-6 flex flex-col gap-5 font-mono text-sm uppercase tracking-[.05em]">
+        <a href="/solutions">Solutions</a>
+        <a href="/intelligence">Intelligence</a>
+        <a href="/compliance" class="text-blue-300">Compliance</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <div class="pt-3">
+          <button type="button" data-open-demo class="w-full text-center bg-blue rounded-[.25em] px-5 py-3">Request a Security Assessment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= INTRO ================= -->
+<section class="pt-[140px] pb-16 lg:pt-[180px] lg:pb-20">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-8">
+      <span class="w-2 h-2 label-dot"></span> Compliance
+    </div>
+    <h1 class="font-mono uppercase tracking-[-0.03em] font-normal leading-[1.15] text-[28px] sm:text-[38px] lg:text-[48px] max-w-4xl">Licensed, insured and accountable</h1>
+    <p class="text-lg sm:text-xl leading-relaxed max-w-2xl mt-6">Security in Nigerian waters and ports is a regulated activity. Below is the regulatory basis on which SUGMAD operates.</p>
+  </div>
+</section>
+
+<!-- ================= REGULATORY APPROVALS ================= -->
+<section>
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+      <span class="w-2 h-2 label-dot"></span> Regulatory Approvals and Registrations
+    </div>
+
+    <div class="border-t border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">Corporate Affairs Commission</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">RC [VERIFY]</span>
+    </div>
+    <div class="border-t border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">Nigeria Security and Civil Defence Corps (NSCDC) private guard company licence</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">[VERIFY]</span>
+    </div>
+    <div class="border-t border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">NIMASA registration</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">[VERIFY]</span>
+    </div>
+    <div class="border-t border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">Nigerian Ports Authority accreditation</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">[VERIFY]</span>
+    </div>
+    <div class="border-t border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">NUPRC / NCDMB registration</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">[VERIFY]</span>
+    </div>
+    <div class="border-t border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">NipeX registration</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">[VERIFY]</span>
+    </div>
+    <div class="border-t border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">ICoCA membership or alignment</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">[VERIFY]</span>
+    </div>
+    <div class="border-t border-b border-stone-300 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <span class="text-base sm:text-lg">ISO certifications</span>
+      <span class="verify font-mono text-xs uppercase tracking-[.04em] px-3 py-1.5 rounded self-start sm:self-auto">[VERIFY]</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RULES FOR THE USE OF FORCE ================= -->
+<section class="mt-20 lg:mt-28">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+      <span class="w-2 h-2 label-dot"></span> Rules for the Use of Force
+    </div>
+    <div class="verify rounded-lg px-5 py-4 text-sm sm:text-base leading-relaxed max-w-2xl">[VERIFY &mdash; this is a legal statement covering whether deployments are armed, unarmed, or conducted alongside statutory armed personnel. It must come from the client in writing. Render this section only once supplied.]</div>
+  </div>
+</section>
+
+<!-- ================= INSURANCE ================= -->
+<section class="mt-16 lg:mt-20">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+      <span class="w-2 h-2 label-dot"></span> Insurance
+    </div>
+    <div class="verify rounded-lg px-5 py-4 text-sm sm:text-base leading-relaxed max-w-2xl">[VERIFY &mdash; cover type and limits]</div>
+  </div>
+</section>
+
+<!-- ================= VETTING AND TRAINING ================= -->
+<section class="mt-16 lg:mt-20">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+      <span class="w-2 h-2 label-dot"></span> Vetting and Training
+    </div>
+    <div class="verify rounded-lg px-5 py-4 text-sm sm:text-base leading-relaxed max-w-2xl">[VERIFY &mdash; personnel vetting process, training curriculum, refresher cadence]</div>
+  </div>
+</section>
+
+<!-- ================= BUSINESS ETHICS AND HUMAN RIGHTS ================= -->
+<section class="mt-16 lg:mt-20 mb-20 lg:mb-28">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+      <span class="w-2 h-2 label-dot"></span> Business Ethics and Human Rights
+    </div>
+    <div class="verify rounded-lg px-5 py-4 text-sm sm:text-base leading-relaxed max-w-2xl">[VERIFY &mdash; standard statements expected in IOC vendor prequalification]</div>
+  </div>
+</section>
+
+<!-- ================= CTA + FOOTER ================= -->
+<footer class="bg-stone-200 text-stone-900">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-12 pt-16 lg:pt-20">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-8 pb-16 lg:pb-20 border-b border-stone-400/70">
+      <h2 class="font-normal tracking-[-0.02em] text-[34px] sm:text-[44px] lg:text-[52px] leading-none">Let&rsquo;s talk</h2>
+      <button type="button" data-open-demo class="btn-primary self-start sm:self-auto bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.5)]">Request a Security Assessment</button>
+    </div>
+
+    <div class="grid sm:grid-cols-[1.4fr_1fr_1fr] gap-10 py-14">
+      <div class="font-mono text-[13px] uppercase tracking-[.04em] text-stone-700 leading-relaxed">
+        SUGMAD ONSHORE SECURITY SERVICES<br />
+        NIGERIA LIMITED<br />
+        SUITE 11A, GROUND FLOOR, EAST PAVILION<br />
+        TAFAWA BALEWA SQUARE COMPLEX<br />
+        LAGOS ISLAND, LAGOS STATE, NIGERIA<br />
+        <br />
+        +234 810 781 1378<br />
+        +234 810 445 8592<br />
+        <br />
+        Operations Desk: 24 hours, 7 days<br />
+        RC Number: [VERIFY]<br />
+        Email: [VERIFY &mdash; company-domain address]
+      </div>
+      <div class="flex flex-col gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-700">
+        <a href="/" class="hover:text-blue transition">Home</a>
+        <a href="/intelligence" class="hover:text-blue transition">Intelligence</a>
+        <a href="/solutions" class="hover:text-blue transition">Solutions</a>
+        <a href="/compliance" class="hover:text-blue transition">Compliance</a>
+        <a href="/about" class="hover:text-blue transition">About</a>
+        <a href="/contact" class="hover:text-blue transition">Contact</a>
+      </div>
+      <div class="flex flex-col gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-700">
+        <a href="/privacy-policy" class="hover:text-blue transition">Privacy Policy</a>
+        <a href="/cookie-policy" class="hover:text-blue transition">Cookie Policy</a>
+        <a href="/accessibility-statement" class="hover:text-blue transition">Accessibility Statement</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 py-8 border-t border-stone-400/70 font-mono text-xs uppercase tracking-[.04em] text-stone-600">
+      <span>&copy; <span data-copyright-year>2025</span> SUGMAD Onshore Security Services Nigeria Limited. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= DEMO MODAL ================= -->
+<div data-demo-modal class="fixed inset-0 z-[60] hidden">
+  <div class="absolute inset-0 bg-ink/80 backdrop-blur-sm" data-close-demo></div>
+  <div class="relative h-full flex items-center justify-center p-4">
+    <div class="relative w-full max-w-3xl bg-white text-stone-900 rounded-2xl overflow-hidden shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] grid sm:grid-cols-[1.2fr_1fr]">
+      <button type="button" data-close-demo class="absolute top-4 right-4 w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 flex items-center justify-center transition z-10" aria-label="Close">
+        <svg viewBox="0 0 12 12" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l10 10M11 1L1 11"/></svg>
+      </button>
+      <div class="p-8 sm:p-10">
+        <h5 class="text-2xl font-normal mb-2">Request a Security Assessment</h5>
+        <p class="text-stone-600 text-sm mb-6">Tell us about your operation and we&rsquo;ll get back to you with a tailored quote.</p>
+        <form data-demo-form class="flex flex-col gap-4">
+          <div class="grid grid-cols-2 gap-4">
+            <input required placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+            <input required placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+          </div>
+          <input required type="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+          <input placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+          <textarea placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]"></textarea>
+          <button type="submit" class="btn-primary bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Request a Security Assessment</button>
+        </form>
+        <div data-demo-success class="hidden">
+          <h5 class="text-2xl font-normal mb-2">Thank you!</h5>
+          <p class="text-stone-600 text-sm">Your request has been received. We&rsquo;ll be in touch shortly.</p>
+        </div>
+      </div>
+      <div class="hidden sm:flex items-center justify-center bg-stone-100 p-8">
+        <img src="/brand_assets/logomark.png" alt="SUGMAD logomark" class="w-2/3 max-w-[220px]" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var toggle = document.querySelector('[data-mobile-toggle]');
+  var menu = document.querySelector('[data-mobile-menu]');
+  toggle.addEventListener('click', function () { menu.classList.toggle('hidden'); });
+
+  var copyrightYearEl = document.querySelector('[data-copyright-year]');
+  if (copyrightYearEl) copyrightYearEl.textContent = new Date().getFullYear();
+
+  var modal = document.querySelector('[data-demo-modal]');
+  document.querySelectorAll('[data-open-demo]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  document.querySelectorAll('[data-close-demo]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+  });
+  var demoForm = document.querySelector('[data-demo-form]');
+  demoForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    demoForm.classList.add('hidden');
+    document.querySelector('[data-demo-success]').classList.remove('hidden');
+  });
+})();
+</script>
+</body>
+</html>
