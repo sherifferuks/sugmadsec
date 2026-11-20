@@ -22,18 +22,18 @@
         },
         colors: {
           ink: '#0a0017',
-          blue: {
-            DEFAULT: '#1935a5',
-            hover: '#1f42ce',
-            100: '#e4e9fb',
-            200: '#c5cff6',
-            300: '#9eaef0',
-            400: '#647ee8',
-            500: '#2247dd',
-            600: '#152d8c',
-            800: '#0e1d5b',
-            900: '#09133a',
-            950: '#050b21',
+          orange: {
+            DEFAULT: '#e67b02',
+            hover: '#fd8d0e',
+            100: '#fff1e1',
+            200: '#fee0bd',
+            300: '#feca90',
+            400: '#fdab4e',
+            500: '#fd8702',
+            600: '#c46902',
+            800: '#7f4401',
+            900: '#502b01',
+            950: '#2e1900',
           },
           stone: {
             100: '#f9faf9',
@@ -53,14 +53,14 @@
 </script>
 <style>
   :root { color-scheme: light; }
-  .label-dot { background: #1935a5; }
+  .label-dot { background: #e67b02; }
   .btn-primary { transition: background-color .2s cubic-bezier(.215,.61,.355,1), transform .2s cubic-bezier(.215,.61,.355,1); }
-  .btn-primary:hover { background-color: #1f42ce; }
+  .btn-primary:hover { background-color: #fd8d0e; }
   .btn-primary:active { transform: scale(.97); }
   .nav-link { position: relative; }
   .nav-link::after { content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 0; background: currentColor; transition: width .25s ease; }
   .nav-link:hover::after, .nav-link:focus-visible::after { width: 100%; }
-  a:focus-visible, button:focus-visible { outline: 2px solid #647ee8; outline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #fdab4e; outline-offset: 2px; }
 </style>
 </head>
 <body class="font-sans text-stone-900 antialiased bg-white">
@@ -76,14 +76,14 @@
 
       <nav class="hidden lg:flex items-center gap-10 font-mono text-[13px] uppercase tracking-[.05em]">
         <a href="/solutions" class="nav-link">Solutions</a>
-        <a href="/intelligence" class="nav-link text-blue-300">Intelligence</a>
+        <a href="/intelligence" class="nav-link text-orange-300">Intelligence</a>
         <a href="/compliance" class="nav-link">Compliance</a>
         <a href="/about" class="nav-link">About</a>
         <a href="/contact" class="nav-link">Contact</a>
       </nav>
 
       <div class="hidden lg:flex items-center gap-3">
-        <button type="button" data-open-demo class="btn-primary bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-5 py-2.5 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.6)]">Request a Security Assessment</button>
+        <button type="button" data-open-demo class="btn-primary bg-orange text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-5 py-2.5 shadow-[0_8px_24px_-8px_rgba(230,123,2,0.6)]">Request a Security Assessment</button>
       </div>
 
       <button type="button" data-mobile-toggle class="lg:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5" aria-label="Toggle menu">
@@ -95,12 +95,12 @@
     <div data-mobile-menu class="lg:hidden hidden border-t border-white/10">
       <div class="px-5 py-6 flex flex-col gap-5 font-mono text-sm uppercase tracking-[.05em]">
         <a href="/solutions">Solutions</a>
-        <a href="/intelligence" class="text-blue-300">Intelligence</a>
+        <a href="/intelligence" class="text-orange-300">Intelligence</a>
         <a href="/compliance">Compliance</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
         <div class="pt-3">
-          <button type="button" data-open-demo class="w-full text-center bg-blue rounded-[.25em] px-5 py-3">Request a Security Assessment</button>
+          <button type="button" data-open-demo class="w-full text-center bg-orange rounded-[.25em] px-5 py-3">Request a Security Assessment</button>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
 <!-- ================= INTRO ================= -->
 <section class="pt-[140px] pb-8 lg:pt-[180px] lg:pb-10">
   <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
-    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-8">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-orange mb-8">
       <span class="w-2 h-2 label-dot"></span> SUGMAD Intelligence
     </div>
     <h1 class="font-mono uppercase tracking-[-0.03em] font-normal leading-[1.15] text-[28px] sm:text-[38px] lg:text-[48px] max-w-4xl">Helping you understand the operating environment</h1>
@@ -127,7 +127,7 @@
 <!-- ================= OUR PRODUCTS ================= -->
 <section>
   <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
-    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue mb-6">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-orange mb-6">
       <span class="w-2 h-2 label-dot"></span> Our Products
     </div>
 
@@ -166,7 +166,7 @@
 <!-- ================= HOW WE WORK ================= -->
 <section class="bg-ink text-white py-20 lg:py-28 mt-20 lg:mt-28">
   <div class="max-w-[1440px] mx-auto px-5 lg:px-12">
-    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-blue-300 mb-14 lg:mb-16">
+    <div class="flex items-center gap-2 font-mono text-[13px] uppercase tracking-[.05em] text-orange-300 mb-14 lg:mb-16">
       <span class="w-2 h-2 label-dot"></span> How We Work
     </div>
 
@@ -200,7 +200,7 @@
   <div class="max-w-[1440px] mx-auto px-5 lg:px-12 pt-16 lg:pt-20">
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-8 pb-16 lg:pb-20 border-b border-stone-400/70">
       <h2 class="font-normal tracking-[-0.02em] text-[34px] sm:text-[44px] lg:text-[52px] leading-none">Let&rsquo;s talk</h2>
-      <button type="button" data-open-demo class="btn-primary self-start sm:self-auto bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 shadow-[0_8px_24px_-8px_rgba(25,53,165,0.5)]">Request a Security Assessment</button>
+      <button type="button" data-open-demo class="btn-primary self-start sm:self-auto bg-orange text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 shadow-[0_8px_24px_-8px_rgba(230,123,2,0.5)]">Request a Security Assessment</button>
     </div>
 
     <div class="grid sm:grid-cols-[1.4fr_1fr_1fr] gap-10 py-14">
@@ -219,17 +219,17 @@
         Email: hr.sugmadbiz@gmail.com
       </div>
       <div class="flex flex-col gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-700">
-        <a href="/" class="hover:text-blue transition">Home</a>
-        <a href="/intelligence" class="hover:text-blue transition">Intelligence</a>
-        <a href="/solutions" class="hover:text-blue transition">Solutions</a>
-        <a href="/compliance" class="hover:text-blue transition">Compliance</a>
-        <a href="/about" class="hover:text-blue transition">About</a>
-        <a href="/contact" class="hover:text-blue transition">Contact</a>
+        <a href="/" class="hover:text-orange transition">Home</a>
+        <a href="/intelligence" class="hover:text-orange transition">Intelligence</a>
+        <a href="/solutions" class="hover:text-orange transition">Solutions</a>
+        <a href="/compliance" class="hover:text-orange transition">Compliance</a>
+        <a href="/about" class="hover:text-orange transition">About</a>
+        <a href="/contact" class="hover:text-orange transition">Contact</a>
       </div>
       <div class="flex flex-col gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-700">
-        <a href="/privacy-policy" class="hover:text-blue transition">Privacy Policy</a>
-        <a href="/cookie-policy" class="hover:text-blue transition">Cookie Policy</a>
-        <a href="/accessibility-statement" class="hover:text-blue transition">Accessibility Statement</a>
+        <a href="/privacy-policy" class="hover:text-orange transition">Privacy Policy</a>
+        <a href="/cookie-policy" class="hover:text-orange transition">Cookie Policy</a>
+        <a href="/accessibility-statement" class="hover:text-orange transition">Accessibility Statement</a>
       </div>
     </div>
 
@@ -252,13 +252,13 @@
         <p class="text-stone-600 text-sm mb-6">Tell us about your operation and we&rsquo;ll get back to you with a tailored quote.</p>
         <form data-demo-form class="flex flex-col gap-4">
           <div class="grid grid-cols-2 gap-4">
-            <input required placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
-            <input required placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
+            <input required placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+            <input required placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
           </div>
-          <input required type="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
-          <input placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]" />
-          <textarea placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-blue [color-scheme:light]"></textarea>
-          <button type="submit" class="btn-primary bg-blue text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Request a Security Assessment</button>
+          <input required type="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+          <input placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+          <textarea placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
+          <button type="submit" class="btn-primary bg-orange text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Request a Security Assessment</button>
         </form>
         <div data-demo-success class="hidden">
           <h5 class="text-2xl font-normal mb-2">Thank you!</h5>
