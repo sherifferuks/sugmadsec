@@ -309,8 +309,8 @@
     submitBtn.textContent = 'Sending...';
     fetch('https://formsubmit.co/ajax/hr.sugmadbiz@gmail.com', {
       method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new FormData(demoForm)
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(demoForm)))
     })
       .then(function (res) { return res.json(); })
       .then(function (data) { if (data.success === false || data.success === 'false') throw new Error('Request failed'); })
