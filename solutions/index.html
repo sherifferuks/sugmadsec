@@ -371,13 +371,18 @@
         <h5 class="text-2xl font-normal mb-2">Request a Security Assessment</h5>
         <p class="text-stone-600 text-sm mb-6">Tell us about your operation and we&rsquo;ll get back to you with a tailored quote.</p>
         <form data-demo-form class="flex flex-col gap-4">
+          <input type="hidden" name="_subject" value="New Security Assessment Request - SUGMAD Website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
           <div class="grid grid-cols-2 gap-4">
-            <input required placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-            <input required placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+            <input required name="first_name" placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+            <input required name="last_name" placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
           </div>
-          <input required type="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-          <input placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-          <textarea placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
+          <input required type="email" name="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+          <input name="company" placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+          <textarea name="message" placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
+          <p data-demo-error class="hidden text-sm text-red-600">Something went wrong sending your request. Please email us directly at hr.sugmadbiz@gmail.com.</p>
           <button type="submit" class="btn-primary bg-orange text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Request a Security Assessment</button>
         </form>
         <div data-demo-success class="hidden">
@@ -417,8 +422,27 @@
   var demoForm = document.querySelector('[data-demo-form]');
   demoForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    demoForm.classList.add('hidden');
-    document.querySelector('[data-demo-success]').classList.remove('hidden');
+    var submitBtn = demoForm.querySelector('button[type="submit"]');
+    var errorEl = demoForm.querySelector('[data-demo-error]');
+    errorEl.classList.add('hidden');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    fetch('https://formsubmit.co/ajax/hr.sugmadbiz@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(demoForm)
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) { if (data.success === false || data.success === 'false') throw new Error('Request failed'); })
+      .then(function () {
+        demoForm.classList.add('hidden');
+        document.querySelector('[data-demo-success]').classList.remove('hidden');
+      })
+      .catch(function () {
+        errorEl.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Request a Security Assessment';
+      });
   });
 
   // Scroll-spy for the solutions sidebar

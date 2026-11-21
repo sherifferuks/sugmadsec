@@ -112,11 +112,15 @@
     <h1 class="font-mono uppercase tracking-[-0.03em] font-normal leading-[1] text-[36px] sm:text-[48px] lg:text-[56px] mb-14 lg:mb-16">Contact</h1>
 
     <form data-contact-form class="grid lg:grid-cols-2 gap-6 lg:gap-x-12 lg:gap-y-6 max-w-3xl">
-      <input required placeholder="Full name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-      <input required placeholder="Company*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-      <input required type="email" placeholder="Work email*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-      <input required type="tel" placeholder="Phone*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-      <select required class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white focus:outline-orange [color-scheme:light]">
+      <input type="hidden" name="_subject" value="New Contact Form Submission - SUGMAD Website" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+      <input required name="full_name" placeholder="Full name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+      <input required name="company" placeholder="Company*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+      <input required type="email" name="email" placeholder="Work email*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+      <input required type="tel" name="phone" placeholder="Phone*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+      <select required name="service" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white focus:outline-orange [color-scheme:light]">
         <option value="" disabled selected>Service of interest*</option>
         <option>Maritime Security</option>
         <option>Onshore Security Services</option>
@@ -127,8 +131,9 @@
         <option>24/7 Emergency Response</option>
         <option>Compliance &amp; Regulatory Support</option>
       </select>
-      <input required placeholder="Location or route*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-      <textarea required placeholder="Brief description of requirement*" rows="4" class="lg:col-span-2 border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
+      <input required name="location" placeholder="Location or route*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+      <textarea required name="description" placeholder="Brief description of requirement*" rows="4" class="lg:col-span-2 border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
+      <p data-contact-error class="hidden lg:col-span-2 text-sm text-red-600">Something went wrong sending your request. Please email us directly at hr.sugmadbiz@gmail.com.</p>
       <button type="submit" class="btn-primary lg:col-span-2 justify-self-start bg-orange text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Submit</button>
     </form>
     <div data-contact-success class="hidden max-w-3xl">
@@ -194,13 +199,18 @@
         <h5 class="text-2xl font-normal mb-2">Request a Security Assessment</h5>
         <p class="text-stone-600 text-sm mb-6">Tell us about your operation and we&rsquo;ll get back to you with a tailored quote.</p>
         <form data-demo-form class="flex flex-col gap-4">
+          <input type="hidden" name="_subject" value="New Security Assessment Request - SUGMAD Website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
           <div class="grid grid-cols-2 gap-4">
-            <input required placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-            <input required placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+            <input required name="first_name" placeholder="Name*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+            <input required name="last_name" placeholder="Surname*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
           </div>
-          <input required type="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-          <input placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
-          <textarea placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
+          <input required type="email" name="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+          <input name="company" placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
+          <textarea name="message" placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
+          <p data-demo-error class="hidden text-sm text-red-600">Something went wrong sending your request. Please email us directly at hr.sugmadbiz@gmail.com.</p>
           <button type="submit" class="btn-primary bg-orange text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Request a Security Assessment</button>
         </form>
         <div data-demo-success class="hidden">
@@ -240,15 +250,53 @@
   var demoForm = document.querySelector('[data-demo-form]');
   demoForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    demoForm.classList.add('hidden');
-    document.querySelector('[data-demo-success]').classList.remove('hidden');
+    var submitBtn = demoForm.querySelector('button[type="submit"]');
+    var errorEl = demoForm.querySelector('[data-demo-error]');
+    errorEl.classList.add('hidden');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    fetch('https://formsubmit.co/ajax/hr.sugmadbiz@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(demoForm)
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) { if (data.success === false || data.success === 'false') throw new Error('Request failed'); })
+      .then(function () {
+        demoForm.classList.add('hidden');
+        document.querySelector('[data-demo-success]').classList.remove('hidden');
+      })
+      .catch(function () {
+        errorEl.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Request a Security Assessment';
+      });
   });
 
   var contactForm = document.querySelector('[data-contact-form]');
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    contactForm.classList.add('hidden');
-    document.querySelector('[data-contact-success]').classList.remove('hidden');
+    var contactSubmitBtn = contactForm.querySelector('button[type="submit"]');
+    var contactErrorEl = contactForm.querySelector('[data-contact-error]');
+    contactErrorEl.classList.add('hidden');
+    contactSubmitBtn.disabled = true;
+    contactSubmitBtn.textContent = 'Sending...';
+    fetch('https://formsubmit.co/ajax/hr.sugmadbiz@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(contactForm)
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) { if (data.success === false || data.success === 'false') throw new Error('Request failed'); })
+      .then(function () {
+        contactForm.classList.add('hidden');
+        document.querySelector('[data-contact-success]').classList.remove('hidden');
+      })
+      .catch(function () {
+        contactErrorEl.classList.remove('hidden');
+        contactSubmitBtn.disabled = false;
+        contactSubmitBtn.textContent = 'Submit';
+      });
   });
 })();
 </script>
