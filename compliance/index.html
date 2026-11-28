@@ -194,7 +194,7 @@
         <br />
         Operations Desk: 24 hours, 7 days<br />
         RC Number: 1794144<br />
-        Email: hr.sugmadbiz@gmail.com
+        Email: hr@sugmadsec.com
       </div>
       <div class="flex flex-col gap-3 font-mono text-[13px] uppercase tracking-[.04em] text-stone-700">
         <a href="/" class="hover:text-orange transition">Home</a>
@@ -240,7 +240,7 @@
           <input required type="email" name="email" placeholder="Email Address*" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
           <input name="company" placeholder="Company Name" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]" />
           <textarea name="message" placeholder="Message" rows="3" class="border border-stone-300 rounded-[.25em] px-4 py-3 text-sm text-stone-900 bg-white placeholder:text-stone-400 focus:outline-orange [color-scheme:light]"></textarea>
-          <p data-demo-error class="hidden text-sm text-red-600">Something went wrong sending your request. Please email us directly at hr.sugmadbiz@gmail.com.</p>
+          <p data-demo-error class="hidden text-sm text-red-600">Something went wrong sending your request. Please email us directly at hr@sugmadsec.com.</p>
           <button type="submit" class="btn-primary bg-orange text-white font-mono text-[13px] uppercase tracking-[.04em] rounded-[.25em] px-6 py-3 mt-2">Request a Security Assessment</button>
         </form>
         <div data-demo-success class="hidden">
@@ -285,7 +285,7 @@
     errorEl.classList.add('hidden');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    fetch('https://formsubmit.co/ajax/hr.sugmadbiz@gmail.com', {
+    fetch('https://formsubmit.co/ajax/hr@sugmadsec.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(Object.fromEntries(new FormData(demoForm)))
